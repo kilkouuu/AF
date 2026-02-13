@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Finance</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ef3124">
+</head>
+<body>
+
+<div class="app">
+    <div class="header">
+        <h2>Work Expenses</h2>
+        <div class="balance">
+            Общие расходы: <span id="total">0</span> ₽
+        </div>
+    </div>
+
+    <div class="content">
+        <input type="text" id="title" placeholder="Название расхода">
+        <input type="number" id="amount" placeholder="Сумма">
+        <button id="addBtn">Добавить</button>
+
+        <div id="transactions"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>
