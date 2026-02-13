@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.app {
+    max-width: 420px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.header {
+    background: #ef3124;
+    color: white;
+    padding: 20px;
+}
+
+.balance {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    background: #ef3124;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.amount {
+    color: #ef3124;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+}
